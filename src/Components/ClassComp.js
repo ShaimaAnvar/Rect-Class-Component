@@ -8,10 +8,15 @@ class ClassComp extends Component {
     handleIncrement = ()=>this.setState({count:this.state.count+5})
     
     handleDecrement = ()=>this.setState({count:this.state.count-1})
-    
-    componentDidMount(){
-        console.log('Component mounted');
-    }
+    componentDidUpdate(){
+      console.log('Component updated');
+  }
+  // componentWillUnmount(){
+  //   console.log('Component removed');
+  // }
+  //   componentDidMount(){
+  //       console.log('Component mounted');
+  //   }
   render() {
     return (
       <div>
